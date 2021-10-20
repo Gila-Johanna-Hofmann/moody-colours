@@ -16,17 +16,15 @@
   <meta property="og:description" content="Individual Colours for Moods.">
   <meta property="og:image" content="image.png">
 
-  <link rel="icon" href="icon.ico">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="icon.png">
 
   <link rel="stylesheet" href="stylesheet.css">
 
 </head>
 
 <body>
-  <div id="container">
-      <div id="content">
+  <div class="container">
+      <div id="content" class="wrapper">
           <div id="setmood">
               <div id="head">
                   <div id="headline">HEADLINE</div>
@@ -35,32 +33,40 @@
               <div id="moods">
                   <div>MOOD1
                       <div>LABEL</div>
-                      <div>SLIDER</div>
+                      <div class="slidercontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeRed">
+                      </div>
                   </div>
                   <div>MOOD2
                       <div>LABEL</div>
-                      <div>SLIDER</div>
+                      <div class="slidercontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeGreen">
+                      </div>
                   </div>
                   <div>MOOD3
                       <div>LABEL</div>
-                      <div>SLIDER</div>
+                      <div class="slidercontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeBlue">
+                      </div>
                   </div>
               </div>
               <div id="submit">
                   <div>BUTTON</div>
               </div>
           </div>
-          <div id="getmood">
-              <div id="getinfo">
-                  <div>TEXT</div>
-                  <div>HEX</div>
-              </div>
-              <div id="refresh">
-                  <div>BUTTON</div>
-              </div>
-          </div>
+            <div id="getmood">
+                <div id="getinfo">
+                    <div>
+                        <p id="demo"></p>
+                    </div>
+                    <div>HEX</div>
+                </div>
+                <div id="refresh">
+                    <div>BUTTON</div>
+                </div>
+            </div>
       </div>
   </div>
-  <script src="js/scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
