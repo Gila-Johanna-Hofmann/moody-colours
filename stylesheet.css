@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
 
 body {
-    background-color: blueviolet;
+    background-color: #ba8ce5;
     font-family: 'Space Grotesk', sans-serif;
+    color: #45731a;
 }
 
     .container {
@@ -30,14 +31,100 @@ body {
         justify-content: center;
         text-align: center;
     }
+        .head {
+            padding-bottom: 7vh;
+        }
 
     .headline {
         font-family: 'Coustard', serif;
         font-weight: bold;
+        font-size:xx-large;
+        padding-bottom: 2vh;
     }
 
-    .sliderhead {
-        font-family: 'Coustard', serif;  
+        .description {
+            font-weight: bold;
+            font-size:x-large;  
+        }
+
+    .sliderarea {
+        padding: 0 10vw 5vh 10vw;
+    }
+
+    .sliderhead, .hextag {
+        font-family: 'Coustard', serif;
+        font-size: large;
+        font-weight: bold;  
+    }
+
+    .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 7px;
+        outline: none;
+        border-radius: 3px;
+    }
+
+    #myRangeRed::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 28px;
+        border: 0;
+        background: url('sparkling-heart.png');
+        cursor: pointer;
+      }
+      
+    #myRangeRed::-moz-range-thumb {
+        width: 30px;
+        height: 28px;
+        border: 0;
+        background: url('sparkling-heart.png');
+        cursor: pointer;
+    }
+
+    #myRangeBlue::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('sauropod.png');
+        cursor: pointer;
+      }
+      
+    #myRangeBlue::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('sauropod.png');
+        cursor: pointer;
+    }
+
+    #myRangeGreen::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('terra.png');
+        cursor: pointer;
+      }
+      
+    #myRangeGreen::-moz-range-thumb {
+        width: 30px;
+        height: 30px;
+        border: 0;
+        background: url('terra.png');
+        cursor: pointer;
+    }
+
+    
+
+    .sliderrange {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     

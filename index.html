@@ -28,62 +28,65 @@
           <div class="setmood">
               <div class="head">
                   <div class="headline">YOUR MOOD HAS A COLOR</div>
-                  <div class="description">Remember mood rings? Oh happy days... If you’re mood today falls somewhere on the three scales below, it still has a color 🌈</div>
+                  <div class="description">Remember mood rings? Oh happy days... If your mood today falls anywhere on the three scales below, it still has a color 🌈</div>
               </div>
               <div class="moods">
-                  <div >
+                    <div class="sliderarea">
                         <div class="sliderhead">
-                            <p>How does your brain feel?</p>
+                            <p>How does your heart feel?</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeRed">
+                            <input type="range" min="0" max="255" value="86" class="slider" id="myRangeRed">
                         </div>
-                        <div>
-                            <p>happy and content</p>
-                        </div>
-                        <div>
-                            <p>stressed and pessimistic</p>
-                        </div>
-                  </div>
-                  <div>
+                        <div class="sliderrange">
+                            <div>
+                                <p>happy and content</p>
+                            </div>
+                            <div>
+                                <p>stressed and pessimistic</p>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="sliderarea">
                         <div class="sliderhead">
                             <p>How does your body feel?</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeBlue">
+                            <input type="range" min="0" max="255" value="250" class="slider" id="myRangeBlue">
                         </div>
-                        <div>
-                            <p>feeling myself</p>
-                        </div>
-                        <div>
-                            <p>what IS this flesh vessel</p>
+                        <div class="sliderrange">
+                            <div>
+                                <p>feeling myself</p>
+                            </div>
+                            <div>
+                                <p>what IS this flesh vessel</p>
+                            </div>
                         </div>
                   </div>
-                  <div>
+                  <div class="sliderarea">
                         <div class="sliderhead">
                             <p>How does the world feel to you?</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeGreen">
+                            <input type="range" min="0" max="255" value="96" class="slider" id="myRangeGreen">
                         </div>
-                        <div>
-                            <p>in perfect sync</p>
-                        </div>
-                        <div>
-                            <p>the world hates me today</p>
+                        <div class="sliderrange">
+                            <div>
+                                <p>in perfect sync</p>
+                            </div>
+                            <div>
+                                <p>the world hates me today</p>
+                            </div>
                         </div>
                   </div>
               </div>
           </div>
             <div class="getmood">
                 <div class="getinfo">
-                    <div>
-                        <p id="demo"></p>
-                    </div>
                     <div class="hextag">
                         <p>Take your mood with you:</p>
                     </div>
-                    <div id="showhex" class="hex">HEX</div>
+                    <div id="showhex" class="hex"></div>
                 </div>
             </div>
       </div>
