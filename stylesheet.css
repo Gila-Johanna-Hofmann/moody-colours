@@ -1,18 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard:wght@900&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
+
 body {
     background-color: blueviolet;
-}
-
-.wrapper {
-    margin-right: auto; 
-    margin-left:  auto; 
-  
-    max-width: 960px; 
-  
-    padding-right: 10px; 
-    padding-left:  10px;
-    
+    font-family: 'Space Grotesk', sans-serif;
 }
 
     .container {
-        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2vmax;
+        padding: 10vh 10vw;
     }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: auto; 
+        margin-left:  auto; 
+        max-width: 960px;     
+    }
+
+    .head, .moods, .getinfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .headline {
+        font-family: 'Coustard', serif;
+        font-weight: bold;
+    }
+
+    .sliderhead {
+        font-family: 'Coustard', serif;  
+    }
+
+    

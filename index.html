@@ -24,45 +24,66 @@
 
 <body>
   <div class="container">
-      <div id="content" class="wrapper">
-          <div id="setmood">
-              <div id="head">
-                  <div id="headline">HEADLINE</div>
-                  <div id="description">lorem ipsum etc etc etc</div>
+      <div class="wrapper">
+          <div class="setmood">
+              <div class="head">
+                  <div class="headline">YOUR MOOD HAS A COLOR</div>
+                  <div class="description">Remember mood rings? Well, if you’re mood today falls somewhere on the three scales below, it still has a color 😊</div>
               </div>
-              <div id="moods">
-                  <div>MOOD1
-                      <div>LABEL</div>
-                      <div class="slidercontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeRed">
-                      </div>
+              <div class="moods">
+                  <div >
+                        <div class="sliderhead">
+                            <p>How does your brain feel?</p>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeRed">
+                        </div>
+                        <div>
+                            <p>happy and content</p>
+                        </div>
+                        <div>
+                            <p>stressed and pessimistic</p>
+                        </div>
                   </div>
-                  <div>MOOD2
-                      <div>LABEL</div>
-                      <div class="slidercontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeGreen">
-                      </div>
+                  <div>
+                        <div class="sliderhead">
+                            <p>How does your body feel?</p>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeBlue">
+                        </div>
+                        <div>
+                            <p>feeling myself</p>
+                        </div>
+                        <div>
+                            <p>what IS this flesh vessel</p>
+                        </div>
                   </div>
-                  <div>MOOD3
-                      <div>LABEL</div>
-                      <div class="slidercontainer">
-                        <input type="range" min="1" max="100" value="50" class="slider" id="myRangeBlue">
-                      </div>
+                  <div>
+                        <div class="sliderhead">
+                            <p>How does the world feel to you?</p>
+                        </div>
+                        <div class="slidercontainer">
+                            <input type="range" min="0" max="255" value="0" class="slider" id="myRangeGreen">
+                        </div>
+                        <div>
+                            <p>in perfect sync</p>
+                        </div>
+                        <div>
+                            <p>the world hates me today</p>
+                        </div>
                   </div>
-              </div>
-              <div id="submit">
-                  <div>BUTTON</div>
               </div>
           </div>
-            <div id="getmood">
-                <div id="getinfo">
+            <div class="getmood">
+                <div class="getinfo">
                     <div>
                         <p id="demo"></p>
                     </div>
-                    <div>HEX</div>
-                </div>
-                <div id="refresh">
-                    <div>BUTTON</div>
+                    <div class="hextag">
+                        <p>Take your mood with you:</p>
+                    </div>
+                    <div id="showhex" class="hex">HEX</div>
                 </div>
             </div>
       </div>
