@@ -1,8 +1,18 @@
-var slider = document.getElementById("myRangeRed");
+var sliderRed = document.getElementById("myRangeRed");
+var sliderBlue = document.getElementById("myRangeBlue");
+var sliderGreen = document.getElementById("myRangeGreen");
 var output = document.getElementById("showhex");
-output.innerHTML = slider.value; // Display the default slider value
+var changecolor = document.getElementsByTagName("body");
+
+// Display the default slider value
+output.innerHTML = sliderRed.value; 
 
 // Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
+sliderRed.oninput = function() {
   output.innerHTML = this.value;
 }
+
+function calculateColor() {
+    
+}
+
