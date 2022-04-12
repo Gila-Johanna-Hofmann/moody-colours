@@ -28,7 +28,7 @@
           <div class="setmood">
               <div class="head">
                   <div class="headline">YOUR MOOD HAS A COLOR</div>
-                  <div class="description">Remember mood rings? Oh happy days... If you quantify your mood right now on the scales below, it still has a color 🌈</div>
+                  <div class="description">Remember mood rings? Oh happy days... Set your mood below and it gets its color back 🌈</div>
               </div>
               <div class="moods">
                     <div class="sliderarea">
@@ -36,23 +36,24 @@
                             <p>Your head...</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="255" value="86" class="slider" id="myRangeRed">
+                            <input type="range" min="-245" max="-10" value="-86" class="slider" id="myRangeRed">
                         </div>
                         <div class="sliderrange">
                             <div>
-                                <p>feels happy and content</p>
+                                <p>feels happy</p>
                             </div>
                             <div>
-                                <p>feels stressed and pessimistic</p>
+                                <p>feels stressed</p>
                             </div>
-                        </div>  
+                        </div>
+                        <p id="red-out"></p>
                     </div>
                     <div class="sliderarea">
                         <div class="sliderhead">
                             <p>Your body...</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="-255" max="0" value="-250" class="slider" id="myRangeBlue">
+                            <input type="range" min="-245" max="-10" value="-240" class="slider" id="myRangeBlue">
                         </div>
                         <div class="sliderrange">
                             <div>
@@ -62,22 +63,24 @@
                                 <p>is a useless flesh vessel</p>
                             </div>
                         </div>
+                        <p id="blue-out"></p>
                   </div>
                   <div class="sliderarea">
                         <div class="sliderhead">
                             <p>The World&#8482...</p>
                         </div>
                         <div class="slidercontainer">
-                            <input type="range" min="0" max="255" value="96" class="slider" id="myRangeGreen">
+                            <input type="range" min="10" max="245" value="96" class="slider" id="myRangeGreen">
                         </div>
                         <div class="sliderrange">
                             <div>
-                                <p>and I are in perfect sync</p>
+                                <p>is your friend</p>
                             </div>
                             <div>
-                                <p>hates me today</p>
+                                <p>hates you today</p>
                             </div>
                         </div>
+                        <p id="green-out"></p>
                   </div>
               </div>
           </div>
@@ -87,7 +90,7 @@
                         <p>Take your mood with you:</p>
                     </div>
                     <div class="hex">
-                        <p id="showhex" ></p>
+                        <p id="show-hex" ></p>
                     </div>
                 </div>
             </div>

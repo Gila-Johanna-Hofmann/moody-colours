@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Coustard&display=swap');
 
 body {
-    background-color: #ba8ce5;
+    background-color:#ba8ce5;
     font-family: 'Space Grotesk', sans-serif;
-    color: #45731a;
+    color: white;
 }
 
     .container {
@@ -124,6 +124,10 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    slider-out {
+        align-self: center;
     }
 
     
