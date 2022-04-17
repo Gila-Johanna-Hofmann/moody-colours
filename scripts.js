@@ -7,21 +7,17 @@ let blue = (parseInt(sliderBlue.value) * -1).toString();
 let output = document.getElementById("show-hex");
 
 sliderRed.onchange = function () {
-  red = blue = (parseInt(sliderRed.value) * -1).toString();
-  document.getElementById("red-out").innerHTML = red;
+  red = (parseInt(sliderRed.value) * -1).toString();
   document.body.style.backgroundColor = ["rgb(",red,",",green,",",blue,")"].join("");
 };
 
 sliderBlue.onchange = function () {
   blue = (parseInt(sliderBlue.value) * -1).toString();
-  document.getElementById("blue-out").innerHTML = blue;
   document.body.style.backgroundColor = ["rgb(",red,",",green,",",blue,")"].join("");
 };
 
 sliderGreen.onchange = function () {
   green = sliderGreen.value;
-  document.getElementById("green-out").innerHTML = green;
-  document.body.style.backgroundColor = "rgb(138, 190, 18)";
   document.body.style.backgroundColor = ["rgb(",red,",",green,",",blue,")"].join("");
 };
 
@@ -44,6 +40,5 @@ window.onchange = function () {
   var redout = parseInt(red);
   var greenout = parseInt(green);
   var blueout = parseInt(blue);
-  console.log(redout + blueout + greenout);
   output.innerHTML =  RGBToHex(redout, greenout, blueout);
 };
