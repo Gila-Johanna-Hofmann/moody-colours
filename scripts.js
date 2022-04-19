@@ -50,15 +50,10 @@ function getColor(slider) {
   return slider.value;
 };
 
-function copyToClipBoard() {
-  navigator.clipboard.writeText(output.innerText);
-}
-
+//get range-value and change background-color on change
 sliderRed.addEventListener('change', (event) => 
-{ 
-  red = getColorReverse(sliderRed);
+{ red = getColorReverse(sliderRed);
   changeBackground()}
-  
 );
 
 sliderBlue.addEventListener('change', (event) => 
@@ -71,8 +66,9 @@ sliderGreen.addEventListener('change', (event) =>
   changeBackground();}
 );
 
+//copy hex-value to clipboard
 copyButton.addEventListener('click', (event) => 
-{ copyToClipBoard("show-hex");}
+{ navigator.clipboard.writeText(output.innerText);}
 );
 
 //display default hex-value
