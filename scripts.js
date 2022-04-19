@@ -36,7 +36,9 @@ function changeHex () {
 
 //changes document body background color based on range-input
 function changeBackground() {
-  document.body.style.backgroundColor = ["rgb(",red,",",green,",",blue,")"].join("");
+ var color = ["rgb(",red,",",green,",",blue,")"].join("");
+  document.body.style.backgroundColor = color;
+  copyButton.style.backgroundColor = color;
   changeHex();
 }
 
