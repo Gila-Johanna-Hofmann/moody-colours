@@ -7,6 +7,7 @@ let red = (parseInt(sliderRed.value) * -1).toString();
 let green = sliderGreen.value;
 let blue = (parseInt(sliderBlue.value) * -1).toString();
 let output = document.getElementById("show-hex");
+let test = "Hallo";
 
 //calculate hex-value from rgb-values
 function RGBToHex(r,g,b) {
@@ -32,25 +33,27 @@ function changeHex () {
   output.innerHTML =  RGBToHex(redout, greenout, blueout);
 }
 
-//changes document body background color based on slider-input
+//changes document body background color based on range-input
 function changeBackground() {
   document.body.style.backgroundColor = ["rgb(",red,",",green,",",blue,")"].join("");
   changeHex();
 }
 
-//returns slider-value in reverse order
+//returns range-value in reverse order
 function getColorReverse(slider) {
   return (parseInt(slider.value) * -1).toString();
 }
 
-//returns slider-value
+//returns range-value
 function getColor(slider) {
   return slider.value;
-}
+};
 
 sliderRed.addEventListener('change', (event) => 
-{ red = getColorReverse(sliderRed);
-  changeBackground();}
+{ 
+  red = getColorReverse(sliderRed);
+  changeBackground()}
+  
 );
 
 sliderBlue.addEventListener('change', (event) => 
