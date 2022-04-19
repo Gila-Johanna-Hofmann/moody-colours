@@ -1,13 +1,14 @@
 const sliderRed = document.getElementById("myRangeRed");
 const sliderBlue = document.getElementById("myRangeBlue");
 const sliderGreen = document.getElementById("myRangeGreen");
+const copyButton = document.getElementById("copyButton");
 
 //establish default background-color
 let red = (parseInt(sliderRed.value) * -1).toString();
 let green = sliderGreen.value;
 let blue = (parseInt(sliderBlue.value) * -1).toString();
 let output = document.getElementById("show-hex");
-let test = "Hallo";
+
 
 //calculate hex-value from rgb-values
 function RGBToHex(r,g,b) {
@@ -49,6 +50,10 @@ function getColor(slider) {
   return slider.value;
 };
 
+function copyToClipBoard() {
+  navigator.clipboard.writeText(output.innerText);
+}
+
 sliderRed.addEventListener('change', (event) => 
 { 
   red = getColorReverse(sliderRed);
@@ -64,6 +69,10 @@ sliderBlue.addEventListener('change', (event) =>
 sliderGreen.addEventListener('change', (event) => 
 { red = getColor(sliderGreen);
   changeBackground();}
+);
+
+copyButton.addEventListener('click', (event) => 
+{ copyToClipBoard("show-hex");}
 );
 
 //display default hex-value
