@@ -1,6 +1,0 @@
--- change og:url in graph meta tag once there's github site url
--- change pic in graph meta tag
-
-
--- slider/range https://www.w3schools.com/howto/howto_js_rangeslider.asp
--- onChange-javascript für rgb-farbberechnung für hintergrund
