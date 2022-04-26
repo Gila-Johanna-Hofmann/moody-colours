@@ -1,5 +1,5 @@
 # Moody Colours
-[Moody Colours](https://gila-johanna-hofmann.github.io/moody-colours/) is a simple webpage that lets users create RGB-colours with their general mood.<br/>
+[Moody Colours](https://gila-johanna-hofmann.github.io/moody-colours/) is a simple webpage that lets users create RGB-colours based on their general mood.<br/>
 It's a fun learning project and my first time writing Javascript completely on my own.<br/>
 I came up with the idea when learning about colours in programming.
 
