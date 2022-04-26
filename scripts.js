@@ -12,25 +12,25 @@ let output = document.getElementById("show-hex");
 
 //calculate hex-value from rgb-values
 function RGBToHex(r,g,b) {
-  r = r.toString(16);
-  g = g.toString(16);
-  b = b.toString(16);
+  let convertRToHex = r.toString(16);
+  let convertGToHex = g.toString(16);
+  let convertBToHex = b.toString(16);
 
-  if (r.length == 1)
-    r = "0" + r;
-  if (g.length == 1)
-    g = "0" + g;
-  if (b.length == 1)
-    b = "0" + b;
+  if (convertRToHex.length == 1)
+    convertRToHex = "0" + convertRToHex;
+  if (convertGToHex.length == 1)
+    convertGToHex = "0" + convertGToHex;
+  if (convertBToHex.length == 1)
+    convertBToHex = "0" + convertBToHex;
 
-  return "#" + r + g + b;
+  return "#" + convertRToHex + convertGToHex + convertBToHex;
 }
 
 //parses rgb-string-values to int-values and calculates hex-value
 function changeHex () {
-  var redout = parseInt(red);
-  var greenout = parseInt(green);
-  var blueout = parseInt(blue); 
+  let redout = parseInt(red);
+  let greenout = parseInt(green);
+  let blueout = parseInt(blue); 
   output.innerHTML =  RGBToHex(redout, greenout, blueout);
 }
 
@@ -70,7 +70,8 @@ sliderGreen.addEventListener('change', (event) =>
 
 //copy hex-value to clipboard
 copyButton.addEventListener('click', (event) => 
-{ navigator.clipboard.writeText(output.innerText);}
+{ navigator.clipboard.writeText(output.innerText);
+  window.alert("Copied!");}
 );
 
 //display default hex-value
